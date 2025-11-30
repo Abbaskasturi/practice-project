@@ -1,0 +1,47 @@
+
+POST http://localhost:5000/register
+Content-Type: application/json
+
+
+{
+    "name": "karthik", 
+    "password": "12345", 
+    "email": "karthik@gmail.com"
+}
+
+### 
+
+POST http://localhost:5000/login 
+Content-Type: application/json 
+
+{
+    "name": "abbas", 
+    "password": "12345", 
+    "email": "abbas@gmail.com"
+}
+
+### 
+
+GET http://localhost:5000/getusers
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWJiYXMiLCJwYXNzd29yZCI6IjEyMzQ1IiwiaWF0IjoxNzY0NDkxNTQ2fQ.UJ81oegfjXOvfrdWtJlUjyxLl-D4hQSkrB5gBq0oIJU
+
+###  
+
+GET http://localhost:5000/oneuser/2 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWJiYXMiLCJwYXNzd29yZCI6IjEyMzQ1IiwiaWF0IjoxNzY0NDk1Nzc3fQ.s0qXria8pDoulkzv3t16tHiuo9Y_Xj7ANqzJ7Bmps7Q
+
+
+###   
+PUT http://localhost:5000/updatation/2 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWJiYXMiLCJwYXNzd29yZCI6IjEyMzQ1IiwiaWF0IjoxNzY0NDk1Nzc3fQ.s0qXria8pDoulkzv3t16tHiuo9Y_Xj7ANqzJ7Bmps7Q 
+Content-Type: application/json 
+
+{
+    "name": "abbas patel"
+}
+
+###   
+
+
+DELETE http://localhost:5000/delete/2 
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWJiYXMiLCJwYXNzd29yZCI6IjEyMzQ1IiwiaWF0IjoxNzY0NDk1Nzc3fQ.s0qXria8pDoulkzv3t16tHiuo9Y_Xj7ANqzJ7Bmps7Q 
